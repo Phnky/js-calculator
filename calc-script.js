@@ -55,3 +55,18 @@ $("#button-9").click(
     appendToDisplay(9);
   }
 );
+$("#button-add").click(
+  function(){
+    appendToDisplay("+");
+  }
+);
+$("#button-sub").click(
+  function(){
+    appendToDisplay("-");
+  }
+);
+$("#button-eval").click(
+  function(){
+    $("#calc-display").val(eval($("#calc-display").val()));
+    }
+);
