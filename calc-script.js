@@ -67,6 +67,18 @@ $("#button-sub").click(
 );
 $("#button-eval").click(
   function(){
+    console.log(typeof $("#calc-display").val());
+    console.log($("#calc-display").val());
     $("#calc-display").val(eval($("#calc-display").val()));
     }
+);
+$(".input-button").click(
+  function(){
+    appendToDisplay(this.value);
+  }
+);
+$("#button-clear").click(
+  function(){
+    $("#calc-display").val("");
+  }
 );
